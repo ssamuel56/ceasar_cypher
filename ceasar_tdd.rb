@@ -18,7 +18,7 @@ class Test_for_cipher < Minitest::Test
     assert_equal("xjsi mjqu, uqjfxj", ceasar("send help, please"))
   end
   def test_for_a_longer_message
-    assert_equal(" ", ceasar("The enemy aproaches. We are low on supplies; our men are going to starve or freeze!"))
+    assert_equal("ymj jsjrd fuwtfhmjx. bj fwj qtb ts xzuuqnjx; tzw rjs fwj ltnsl yt xyfwaj tw kwjjej!", ceasar("The enemy aproaches. We are low on supplies; our men are going to starve or freeze!"))
   end
   def test_for_a_comma
     assert_equal("send help, please", ceasar_reverse("xjsi mjqu, uqjfxj"))
