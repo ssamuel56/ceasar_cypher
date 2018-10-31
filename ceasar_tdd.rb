@@ -23,4 +23,10 @@ class Test_for_cipher < Minitest::Test
   def test_for_a_hard_reverse
     assert_equal("<cohg> <nxmdko></nxmdko> </cohg> %%%", ceasar_reverse("<html> <script></script> </html> %%%"))
   end
+  def test_ceaser_with_no_string_as_argument
+    assert_nil(nil, ceasar(123))
+  end
+  def test_ceaser_reverse_with_no_string_as_argument
+    assert_nil(nil, ceasar(123))
+  end
 end
