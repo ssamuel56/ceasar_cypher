@@ -15,6 +15,6 @@ class Test_for_cipher < Minitest::Test
     assert_equal("xjsi mjqu", ceasar("send help"))
   end
   def test_for_a_comma
-    assert_equal(" ", ceasar("send help, please"))
+    assert_equal("xjsi mjqu, uqjfxj", ceasar("send help, please"))
   end
 end
