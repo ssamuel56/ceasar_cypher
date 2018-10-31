@@ -8,7 +8,10 @@ class Test_for_cipher < Minitest::Test
   def test_for_combinations
     assert_equal("g", ceasar("b"))
   end
-  def test_for_send_help
+  def test_for_help
     assert_equal("mjqu", ceasar("help"))
+  end
+  def test_for_send_help
+    assert_equal(" ", ceasar("send help"))
   end
 end
