@@ -24,10 +24,10 @@ class Test_for_cipher < Minitest::Test
     assert_equal("send help, please", ceasar_reverse("xjsi mjqu, uqjfxj"))
   end
   def test_for_a_hard_reverse
-    assert_equal("<xjcb> <ishyfj></ishyfj> </xjcb> %%%", ceasar_reverse("<cohg> <nxmdko></nxmdko> </cohg> %%%"))
+    assert_equal("<sexw> <dnctae></dnctae> </sexw> %%%", ceasar_reverse("<xjcb> <ishyfj></ishyfj> </xjcb> %%%"))
   end
   def test_for_a_hard_string
-    assert_equal(" ", ceasar_reverse("<cohg> <nxmdko></nxmdko> </cohg> %%%"))
+    assert_equal("<xjcb> <ishyfj></ishyfj> </xjcb> %%%", ceasar_reverse("<cohg> <nxmdko></nxmdko> </cohg> %%%"))
   end
   def test_ceaser_with_no_string_as_argument
     assert_nil(nil, ceasar(123))
