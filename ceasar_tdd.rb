@@ -18,6 +18,9 @@ class Test_for_cipher < Minitest::Test
     assert_equal("xjsi mjqu, uqjfxj", ceasar("send help, please"))
   end
   def test_for_a_comma
-    assert_equal(" ", ceasar_reverse("xjsi mjqu, uqjfxj"))
+    assert_equal("send help, please", ceasar_reverse("xjsi mjqu, uqjfxj"))
+  end
+  def test_for_a_hard_reverse
+    assert_equal("<cohg> <nxmdko></nxmdko> </cohg> %%%", ceasar_reverse("<html> <script></script> </html> %%%"))
   end
 end
