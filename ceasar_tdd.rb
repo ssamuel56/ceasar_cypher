@@ -12,6 +12,6 @@ class Test_for_cipher < Minitest::Test
     assert_equal("mjqu", ceasar("help"))
   end
   def test_for_send_help
-    assert_equal(" ", ceasar("send help"))
+    assert_equal("xjsi mjqu", ceasar("send help"))
   end
 end
