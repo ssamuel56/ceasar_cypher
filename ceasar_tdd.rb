@@ -6,6 +6,6 @@ class Test_for_cipher < Minitest::Test
     assert_equal(1, 1)
   end
   def test_for_combinations
-    assert_equal([], ceazar("b", encrypt))
+    assert_equal([], ceasar("b"))
   end
 end
