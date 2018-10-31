@@ -10,3 +10,16 @@ def ceasar(string)
   end
   return temp_arr.join
 end
+
+def ceasar_reverse(string)
+  counter = 0
+  arr = ("a".."z").to_a; arr2 = Array.new; temp_arr = Array.new; arr.map.with_index {|x, i| arr2[i] = arr[i - 21]}
+  string.downcase.split('').each do |char|
+    if char.count("a-z") < 1
+      temp_arr << char
+    else
+      temp_arr << arr[arr2.index("#{char}")]
+    end
+  end
+  return temp_arr.join
+end
