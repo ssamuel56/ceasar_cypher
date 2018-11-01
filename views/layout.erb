@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The cipher</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+
+    <header id="main-header">
+      <h1>Seasar's Cipher</h1>
+    </header>
+
+    <div class="container">
+      <h2>Please enter your message and decypher or encrypt it</h2>
+      <form id="form-data" action="/encrypt" method="POST">
+        <input id="text-box" type="text" name="message" placeholder="Secret Message"><br>
+        <input class="button" type="submit" name="" value="Encrypt">
+        <input class="button" type="submit" formaction="/decrypt" name="" value="Decrypt">
+      </form>
+
+      <%= yield %>
+
+    </div>
+
+  </body>
+</html>
