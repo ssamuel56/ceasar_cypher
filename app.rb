@@ -7,7 +7,7 @@ end
 
 post '/encrypt' do
   message = params[:message]
-  erb :index, :locals => {'message' => message}
+  erb :encrypt, :locals => {'message' => message}
 end
 
 post '/decrypt' do
