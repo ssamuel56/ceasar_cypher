@@ -55,10 +55,12 @@ class Test_for_cipher < Minitest::Test
     assert_equal("docd pyb 10", ceasar("Test for 10", 10))
   end
   def test_with_time_for_day_6
-    assert_equal("", ceasar("String of letters", 6))
+    assert_equal("yzxotm ul rkzzkxy", ceasar("String of letters", 6))
   end
-  def test_for_any_day
-    day = Time.now.day
-    assert_equal("", ceasar("String of letters", day))
+  def test_with_time_for_day_27
+    assert_equal("uftu gps 27", ceasar("Test for 27", 27))
+  end
+  def test_with_time_for_day_31
+    assert_equal("", ceasar("Test for 30", 30))
   end
 end
