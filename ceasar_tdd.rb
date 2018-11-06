@@ -61,6 +61,6 @@ class Test_for_cipher < Minitest::Test
     assert_equal("uftu gps 27", ceasar("Test for 27", 27))
   end
   def test_with_time_for_day_31
-    assert_equal("", ceasar("Test for 30", 30))
+    assert_equal("xiwx jsv 30", ceasar("Test for 30", 30))
   end
 end
