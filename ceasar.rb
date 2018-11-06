@@ -1,5 +1,6 @@
 def ceasar(string, rotate_by = Time.now.day)
   arr = ("a".."z").to_a; arr2 = Array.new; temp_arr = Array.new; arr.each.with_index {|x, i| arr2[i] = arr[i - (16 + rotate_by)]}
+  p "This is arr2 #{arr2}"
   if string.class == String
     string.downcase.split('').each do |char|
       if char.count("a-z") < 1
