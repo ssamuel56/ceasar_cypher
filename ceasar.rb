@@ -1,6 +1,5 @@
-def ceasar(string)
-  counter = 0
-  arr = ("a".."z").to_a; arr2 = Array.new; temp_arr = Array.new; arr.map.with_index {|x, i| arr2[i] = arr[i - 21]}
+def ceasar(string, rotate_by = 5)
+  arr = ("a".."z").to_a; arr2 = Array.new; temp_arr = Array.new; arr.each.with_index {|x, i| arr2[i] = arr[i - (16 + rotate_by)]}
   if string.class == String
     string.downcase.split('').each do |char|
       if char.count("a-z") < 1
@@ -17,9 +16,8 @@ def ceasar(string)
   end
 end
 
-def ceasar_reverse(string)
-  counter = 0
-  arr = ("a".."z").to_a; arr2 = Array.new; temp_arr = Array.new; arr.map.with_index {|x, i| arr2[i] = arr[i - 21]}
+def ceasar_reverse(string, rotate_by = 5)
+  arr = ("a".."z").to_a; arr2 = Array.new; temp_arr = Array.new; arr.each.with_index {|x, i| arr2[i] = arr[i - (16 + rotate_by)]}
   if string.class == String
     string.downcase.split('').each do |char|
       if char.count("a-z") < 1
