@@ -64,7 +64,7 @@ class Test_for_cipher < Minitest::Test
     assert_equal("xiwx jsv 30", ceasar("Test for 30", 30))
   end
   def test_for_time_with_day_26
-    assert_equal("", ceasar("Test for 26", 26))
+    assert_equal("yjxy ktw 26", ceasar("Test for 26", 26))
   end
   def test_with_time_for_day_5_reversed
     day_of_month = 5
