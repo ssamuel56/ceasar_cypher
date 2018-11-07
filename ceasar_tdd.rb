@@ -77,6 +77,7 @@ class Test_for_cipher < Minitest::Test
     assert_equal("string of letters", ceasar_reverse("yzxotm ul rkzzkxy", 6))
   end
   def test_for_time_with_day_26_reversed
+    assert_equal("", ceasar_reverse("Test_for_day 27", 27))
   end
   def test_with_time_for_day_27_reversed
     assert_equal("test for 27", ceasar_reverse("uftu gps 27", 27))
