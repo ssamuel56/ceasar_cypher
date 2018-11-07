@@ -66,8 +66,10 @@ class Test_for_cipher < Minitest::Test
   def test_for_time_with_day_26
     assert_equal("yjxy ktw 26", ceasar("Test for 26", 26))
   end
+  def test_for_time_with_day_7
+    assert_equal("alza mvy khf 7", ceasar("Test for day 7", 7))
+  end
   def test_with_time_for_day_5_reversed
-    day_of_month = 5
     assert_equal("test for 5", ceasar_reverse("yjxy ktw 5", 5))
   end
   def test_with_time_for_day_10_reversed
@@ -76,8 +78,11 @@ class Test_for_cipher < Minitest::Test
   def test_with_time_for_day_6_reversed
     assert_equal("string of letters", ceasar_reverse("yzxotm ul rkzzkxy", 6))
   end
+  def test_for_time_with_day_7_reversed
+    assert_equal("test for day 7", ceasar_reverse("alza mvy khf 7", 7))
+  end
   def test_for_time_with_day_26_reversed
-    assert_equal("sdrs_enq_czx 27", ceasar_reverse("Test_for_day 27", 27))
+    assert_equal("ozno_ajm_yvt 26", ceasar_reverse("Test_for_day 26", 26))
   end
   def test_with_time_for_day_27_reversed
     assert_equal("test for 27", ceasar_reverse("uftu gps 27", 27))
